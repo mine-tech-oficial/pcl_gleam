@@ -17,6 +17,14 @@ world: \"hello\""
   |> birdie.snap("Many properties")
 }
 
+pub fn underscore_variable_test() {
+  "hello_world: \"hi!\""
+  |> pcl.parse
+  |> should.be_ok
+  |> pprint.format
+  |> birdie.snap("Underscore variable")
+}
+
 pub fn string_test() {
   "hello: \"world\""
   |> pcl.parse

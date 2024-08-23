@@ -1,0 +1,7 @@
+---
+version: 1.2.0
+title: Underscore variable
+file: ./test/pcl_test.gleam
+test_name: underscore_variable_test
+---
+[#("hello_world", String("hi!"))]
