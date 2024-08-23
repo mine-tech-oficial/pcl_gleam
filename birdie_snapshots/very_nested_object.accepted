@@ -1,0 +1,29 @@
+---
+version: 1.2.0
+title: Very nested object
+file: ./test/pcl_test.gleam
+test_name: very_nested_object_test
+---
+[
+  #(
+    "hello",
+    Object([
+      #(
+        "world",
+        Object([
+          #(
+            "testing",
+            String("does it work?"),
+          ),
+        ]),
+      ),
+      #(
+        "another",
+        Object([
+          #("parameter", Int(123)),
+        ]),
+      ),
+      #("again", Float(123.01)),
+    ]),
+  ),
+]

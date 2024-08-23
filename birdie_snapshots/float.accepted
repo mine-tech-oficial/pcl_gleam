@@ -1,0 +1,7 @@
+---
+version: 1.2.0
+title: Float
+file: ./test/pcl_test.gleam
+test_name: float_test
+---
+[#("float37", Float(37.37))]

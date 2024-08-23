@@ -1,0 +1,10 @@
+---
+version: 1.2.0
+title: Many properties
+file: ./test/pcl_test.gleam
+test_name: many_properties_test
+---
+[
+  #("hello", String("world")),
+  #("world", String("hello")),
+]

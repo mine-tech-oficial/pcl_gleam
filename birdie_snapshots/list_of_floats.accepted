@@ -1,0 +1,15 @@
+---
+version: 1.2.0
+title: List of Floats
+file: ./test/pcl_test.gleam
+test_name: float_list_test
+---
+[
+  #(
+    "floats",
+    List([
+      Float(123.456),
+      Float(789.012),
+    ]),
+  ),
+]

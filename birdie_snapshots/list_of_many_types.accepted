@@ -1,0 +1,23 @@
+---
+version: 1.2.0
+title: List of Many Types
+file: ./test/pcl_test.gleam
+test_name: many_types_list_test
+---
+ParserError([
+  DeadEnd(
+    Span(1, 8, 1, 12),
+    Expected("a value", ListT),
+    [],
+  ),
+  DeadEnd(
+    Span(1, 8, 1, 12),
+    Expected("ObjectT", ListT),
+    [],
+  ),
+  DeadEnd(
+    Span(5, 1, 5, 4),
+    Custom("Can't have multiple types in a list"),
+    [],
+  ),
+])
