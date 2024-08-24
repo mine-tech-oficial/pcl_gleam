@@ -112,6 +112,7 @@ fn take_variable() {
 
   case token {
     VariableName(name) -> Some(name)
+    StringT(name) -> Some(name)
     _ -> None
   }
 }

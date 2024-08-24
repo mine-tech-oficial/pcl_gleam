@@ -1,0 +1,7 @@
+---
+version: 1.2.1
+title: Quoted variable
+file: ./test/pcl_test.gleam
+test_name: quoted_variable_test
+---
+[#("hello world", Int(123))]

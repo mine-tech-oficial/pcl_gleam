@@ -25,6 +25,14 @@ pub fn underscore_variable_test() {
   |> birdie.snap("Underscore variable")
 }
 
+pub fn quoted_variable_test() {
+  "\"hello world\": 123"
+  |> pcl.parse
+  |> should.be_ok
+  |> pprint.format
+  |> birdie.snap("Quoted variable")
+}
+
 pub fn string_test() {
   "hello: \"world\""
   |> pcl.parse
