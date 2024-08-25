@@ -136,6 +136,7 @@ fn take_array_help() {
   use value <- nibble.do(nibble.sequence(
     nibble.one_of([
       take_value(),
+      nibble.lazy(take_array),
       nibble.map(nibble.many(nibble.lazy(expression_parser)), Object),
     ]),
     nibble.token(Hyphen),

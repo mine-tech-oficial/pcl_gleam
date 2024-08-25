@@ -1,5 +1,5 @@
 ---
-version: 1.2.0
+version: 1.2.1
 title: List of Lists
 file: ./test/pcl_test.gleam
 test_name: list_of_lists_test
@@ -8,20 +8,10 @@ test_name: list_of_lists_test
   #(
     "lists",
     List([
-      Object([
-        #(
-          "more",
-          List([Int(123), Int(456)]),
-        ),
-      ]),
-      Object([
-        #(
-          "things",
-          List([
-            String("hello"),
-            String("world"),
-          ]),
-        ),
+      List([Int(123), Int(456)]),
+      List([
+        String("hello"),
+        String("world"),
       ]),
     ]),
   ),

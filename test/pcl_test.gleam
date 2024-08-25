@@ -147,11 +147,11 @@ end"
 
 pub fn list_of_lists_test() {
   "lists: list
-- more: list
+- list
   - 123
   - 456
   end
-- things: list
+- list
   - \"hello\"
   - \"world\"
   end
